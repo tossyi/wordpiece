@@ -11,7 +11,6 @@ file = "corpus.txt"
 outputfile = "corpus-parse.txt"
 
 with open(file,mode='r',encoding='utf-8') as f:
-    # ファイル全体をテキストで読み込み
     text = [s.strip() for s in f.readlines()]
 f.close()
 
@@ -19,7 +18,7 @@ tagger = MeCab.Tagger("-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd
 
 with open(outputfile,mode='w',encoding='utf-8') as fw:
     for line in text:
-        # 文を形態素解析する
+        # Morphological analysis
         parseline = tagger.parse(line)
         fw.write(parseline)
 fw.close()

@@ -1,1 +1,1 @@
-### MeCab+WordPieceで語彙リストを作る
+### MeCab+WordPiece
