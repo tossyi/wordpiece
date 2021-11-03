@@ -1,2 +1,1 @@
-# wordpiece
-wordpieceで語彙リストを作る
+### MeCab+WordPieceで語彙リストを作る
